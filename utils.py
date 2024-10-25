@@ -7,17 +7,17 @@ import pandas as pd
 questions = [
        {
         "question": "How would you describe an alien whose favorite artist is Jcole, whose favorite car is a BMW X6, who dislikes Hypocrisy, and a last born?",
-        "options": ["75% Lekan and 25% Muyiwa", "50% Lekan and 50% Semilore", "50% Joel and 50%Lekan", "25% Semilore and 75% Lekan"],
+        "options": ["75% Lekan and 25% Muyiwa", "50% Lekan and 50% Semilore", "50% Joel and 50%Lekan", "75% Lekan and 25% Semilore"],
         "answer": "75% Lekan and 25% Semilore"
     },
     {
         "question": "How would you describe an alien who loves Truck!,loves tomike,loves Beans and rice, and lives in Lagos?",
-        "options": ["50% Joel and 50% Tomi", "75% Joel and 25% Semilore", "100% Semilore", "50% Semilore and 50% Joel"],
+        "options": ["50% Joel and 50% Tomi", "75% Joel and 25% Semilore", "100% Semilore", "50% Joel and 50% Semilore"],
         "answer": "50% Joel and 50% Semilore"
     },
     {
-        "question": "How would you describe an alien who loves Asake and Fireboy, whose dreams to become a brand and marketing strategist, whose deal breaker is Cheating, and who studied Mass Communication?",
-        "options": ["25% Semilore and 75% Tomi", "75% Tomi and 25% Lekan", "75% Monica and 25% Semilore", "100% Tomi"],
+        "question": "How would you describe an alien who loves Asake and Fireboy, whose dream is to become a brand and marketing strategist, whose deal breaker is Cheating, and who studied Mass Communication?",
+        "options": ["75% Tomi and 25% Semilore", "75% Tomi and 25% Lekan", "75% Monica and 25% Semilore", "100% Tomi"],
         "answer": "75% Tomi and 25% Semilore"
     },
     {
@@ -37,7 +37,7 @@ questions = [
     },
     {
         "question": "How would you describe an alien who consider low mentality a turn-off, who wants to drive a Mercedes G63S AMG, loves color white, and is the third child?",
-        "options": ["25% Muyiwa and 75% Tomi", "50% Muyiwa and 50% Joel", "100% Muyiwa", "75% Semilore and 25% Joel"],
+        "options": ["50% Muyiwa and 50% Joel", "100% Muyiwa","75% Tomi and 25% Muyiwa", "75% Semilore and 25% Joel"],
         "answer": "75% Tomi and 25% Muyiwa"
     },
     {
@@ -52,7 +52,7 @@ questions = [
     },
     {
         "question": "How would you describe a baby alien called  Sho Money, who would quit on an hypocrite, loves swallow alot and was born in Abeokuta?",
-        "options": ["50% Semilore and 50% Lekan", "100% Semilore", "75% Lekan and 25% Muyiwa", "25% Joel and 75% Lekan"],
+        "options": ["100% Semilore","50% Semilore and 50% Lekan", "75% Lekan and 25% Muyiwa", "25% Joel and 75% Lekan"],
         "answer": "50% Semilore and 50% Lekan"
     },
     {
