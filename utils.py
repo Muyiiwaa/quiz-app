@@ -1,16 +1,66 @@
 from typing import List,Dict
-import psycopg2
 import pandas as pd
 
 
 
 # Define the quiz questions and answers
 questions = [
+       {
+        "question": "How would you describe an alien whose favorite artist is Jcole, whose favorite car is a BMW X6, who dislikes Hypocrisy, and a last born?",
+        "options": ["75% Lekan and 25% Muyiwa", "50% Lekan and 50% Semilore", "50% Joel and 50%Lekan", "25% Semilore and 75% Lekan"],
+        "answer": "75% Lekan and 25% Semilore"
+    },
+    {
+        "question": "How would you describe an alien who loves Truck!,loves tomike,loves Beans and rice, and lives in Lagos?",
+        "options": ["50% Joel and 50% Tomi", "75% Joel and 25% Semilore", "100% Semilore", "50% Semilore and 50% Joel"],
+        "answer": "50% Joel and 50% Semilore"
+    },
+    {
+        "question": "How would you describe an alien who loves Asake and Fireboy, whose dreams to become a brand and marketing strategist, whose deal breaker is Cheating, and who studied Mass Communication?",
+        "options": ["25% Semilore and 75% Tomi", "75% Tomi and 25% Lekan", "75% Monica and 25% Semilore", "100% Tomi"],
+        "answer": "75% Tomi and 25% Semilore"
+    },
+    {
+        "question": "How would you describe a child alien a.k.a Okanlawon, who is the third child,really loves an hyundai creta, and whose favorite food includes coleslaw?",
+        "options": ["50% Monica and 50% Muyiwa", "75% Muyiwa and 25% Tomi", "50% Monica and 50% Tomi", "100% Monica"],
+        "answer": "50% Monica and 50% Tomi"
+    },
+    {
+        "question": "How would you describe an alien whose dream is to become a top ML Engineer, who loves Dunsin, BurnaBoy, and whose favourite color is red?",
+        "options": ["100% Joel", "50% Joel and 50% Muyiwa", "75% Muyiwa and 25% Monica", "25% Joel and 75% Tomi"],
+        "answer": "50% Joel and 50% Muyiwa"
+    },
+    {
+        "question": "How would you describe an alien who loves Moses Bliss and Kizz Daniel, currently living a version of what's close to their dream, born in Ilorin and considers Infidelity a deal breaker?",
+        "options": ["50% Monica and 50% Joel", "100% Monica","75% Monica and 25% Muyiwa", "25% Muyiwa and 75% Lekan"],
+        "answer": "75% Monica and 25% Muyiwa"
+    },
+    {
+        "question": "How would you describe an alien who consider low mentality a turn-off, who wants to drive a Mercedes G63S AMG, loves color white, and is the third child?",
+        "options": ["25% Muyiwa and 75% Tomi", "50% Muyiwa and 50% Joel", "100% Muyiwa", "75% Semilore and 25% Joel"],
+        "answer": "75% Tomi and 25% Muyiwa"
+    },
+    {
+        "question": "How would you describe an alien whose dream job is a sellside analyst, loves the color pink/army green, considers yeshua is favourite, and is the 4th child?",
+        "options": ["75% Lekan and 25% Tomi", "75% Lekan and 25% Joel", "100% Joel", "25% Joel and 75% Lekan"],
+        "answer": "75% Lekan and 25% Joel"
+    },
+    {
+        "question": "How would you describe an alien who prefers Jollof rice beef and coleslaw, hates Unpleasant Smells, values Nursing, and loves the color red?",
+        "options": ["75% Monica and 25% Joel", "100% Monica", "50% Tomi and 50% Monica", "25% Lekan and 75% Monica"],
+        "answer": "75% Monica and 25% Joel"
+    },
+    {
+        "question": "How would you describe a baby alien called  Sho Money, who would quit on an hypocrite, loves swallow alot and was born in Abeokuta?",
+        "options": ["50% Semilore and 50% Lekan", "100% Semilore", "75% Lekan and 25% Muyiwa", "25% Joel and 75% Lekan"],
+        "answer": "50% Semilore and 50% Lekan"
+    },
     {
         "question": "Become a husband first",
         "options": ["Joel", "Lekan", "Muyiwa"],
         "answer":"Joel"
     },
+    
     {
         "question": "Become a wife first",
         "options": ["Monica", "Semilore", "Tomisin"],
@@ -158,3 +208,5 @@ def get_questions(inputs:List = questions) -> List[Dict]:
 
 if __name__ == "__main__":
     print(len(real_questions))
+    
+    
