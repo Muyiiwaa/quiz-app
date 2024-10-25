@@ -116,10 +116,16 @@ if st.button("Submit Answer", disabled=st.session_state.question_answered):
     current_score = data.loc[data["player_name"] == st.session_state.selected_player, "score"].values[0]
 
     if selected_option == current_q["answer"]:
-        st.session_state.feedback = "Correct! 🎉"
+        st.session_state.feedback = "Correct! 🎉 Majority agree with you"
         current_score += 1
     else:
-        st.session_state.feedback = f"Wrong! 😢 The answer is '{current_q['answer']}'."
+        st.session_state.feedback = f"Wrong! 😢 Majority disagree with you'."
+        
+    if 'Correct' in st.session_state.feedback:
+        st.success(st.session_state.feedback)
+    else:
+        st.error(st.session_state.feedback)
+        
 
     # Update score in PostgreSQL
     update_score(st.session_state.selected_player, int(current_score))
